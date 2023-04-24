@@ -11,9 +11,17 @@ export default function Navbar() {
           height="60"
         ></img>
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+          <div className="left-navigation-menu">
+            <a className="navbar-brand" href="#">
+              MENU
+            </a>
+            <a className="navbar-brand" href="#">
+              REWARDS
+            </a>
+            <a className="navbar-brand" href="#">
+              GIFT CARDS
+            </a>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -23,7 +31,7 @@ export default function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon">test</span>
           </button>
         </div>
       </nav>

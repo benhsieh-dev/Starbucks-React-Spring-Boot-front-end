@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.left-navigation-menu {
+  font-family: SoDoSans,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    font-style: normal;
+}
