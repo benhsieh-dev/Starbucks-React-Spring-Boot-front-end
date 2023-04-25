@@ -2,18 +2,17 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function Home() {
+  const [drinks, setDrinks] = useState([]);
 
-  const [drinks, serDrinks] = useState([]);
-
-  useEffect(()=> {
+  useEffect(() => {
     loadDrinks();
-  },[]);
+  }, []);
 
-  const loadDrinks= async ()=>{
+  const loadDrinks = async () => {
     const result = await axios.get("http://localhost:8080/drinks");
-    console.log(result); 
-  }
-  
+    setDrinks(result.data);
+  };
+
   return (
     <div>
       <div className="py-4">
@@ -21,29 +20,26 @@ export default function Home() {
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">Name</th>
+              <th scope="col">Category</th>
+              <th scope="col">Subcategory</th>
+              <th scope="col">Price</th>
+              <th scope="col">Image URL</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
+            {drinks.map((drink, index) => (
+              <tr>
+                <th scope="row" key={index}>
+                  {index++}
+                </th>
+                <td>{drink.name}</td>
+                <td>{drink.category}</td>
+                <td>{drink.subcategory}</td>
+                <td>{drink.price}</td>
+                <td>{drink.imageUrl}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
