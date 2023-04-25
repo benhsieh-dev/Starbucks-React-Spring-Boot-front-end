@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-export default function Home() {
+export default function Menu() {
   const [drinks, setDrinks] = useState([]);
 
   useEffect(() => {
@@ -25,19 +25,25 @@ export default function Home() {
               <th scope="col">Subcategory</th>
               <th scope="col">Price</th>
               <th scope="col">Image URL</th>
+              <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody>
             {drinks.map((drink, index) => (
               <tr>
                 <th scope="row" key={index}>
-                  {index++}
+                  {index + 1}
                 </th>
                 <td>{drink.name}</td>
                 <td>{drink.category}</td>
                 <td>{drink.subcategory}</td>
                 <td>{drink.price}</td>
                 <td>{drink.imageUrl}</td>
+                <td>
+                  <button className="btn btn-primary mx-2">View</button>
+                  <button className="btn btn-outline-primary mx-2">Edit</button>
+                  <button className="btn btn-danger mx-2">Delete</button>
+                </td>
               </tr>
             ))}
           </tbody>
