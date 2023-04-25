@@ -3,6 +3,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from "react-helmet";
 import Navbar from "./layout/Navbar";
 import Menu from "./pages/Menu";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -12,8 +13,12 @@ function App() {
         <title>Starbucks Coffee Company</title>
         <link rel="canonical" href="http://www.starbucks.com" />
       </Helmet>
-      <Navbar />
-      <Menu />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Menu />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
