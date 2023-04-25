@@ -22,7 +22,7 @@ export default function Navbar() {
             <a className="navbar-brand" href="www.youtube.com">
               GIFT CARDS
             </a>
-            <Link className="btn btn-outline-light" to="/adddrink">Add Menu Item</Link>
+            <Link to="/adddrink">Add Menu Item</Link>
           </div>
         </div>
       </nav>
