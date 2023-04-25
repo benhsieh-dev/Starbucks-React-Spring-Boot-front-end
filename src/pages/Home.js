@@ -5,7 +5,14 @@ export default function Home() {
 
   const [drinks, serDrinks] = useState([]);
 
-  useEffect(()=> console.log('Starbucks!'));
+  useEffect(()=> {
+    loadDrinks();
+  },[]);
+
+  const loadDrinks= async ()=>{
+    const result = await axios.get("http://localhost:8080/drinks");
+    console.log(result); 
+  }
   
   return (
     <div>
