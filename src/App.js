@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import Navbar from "./layout/Navbar";
 import Menu from "./pages/Menu";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import AddDrink from "./drinks/AddDrink";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Menu />} />
+          <Route exact path="/adddrink" element={<AddDrink />} />
         </Routes>
       </Router>
     </div>

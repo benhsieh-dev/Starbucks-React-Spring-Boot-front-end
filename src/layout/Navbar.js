@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -21,7 +22,7 @@ export default function Navbar() {
             <a className="navbar-brand" href="www.youtube.com">
               GIFT CARDS
             </a>
-            <button>Add Menu Item</button>
+            <Link className="btn btn-outline-light" to="/adddrink">Add Menu Item</Link>
           </div>
         </div>
       </nav>
