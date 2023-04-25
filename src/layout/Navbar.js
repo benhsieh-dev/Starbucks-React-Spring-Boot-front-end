@@ -12,27 +12,17 @@ export default function Navbar() {
         ></img>
         <div className="container-fluid">
           <div className="left-navigation-menu">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="www.google.com">
               MENU
             </a>
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="www.amazon.com">
               REWARDS
             </a>
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="www.youtube.com">
               GIFT CARDS
             </a>
+            <button>Add Menu Item</button>
           </div>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon">test</span>
-          </button>
         </div>
       </nav>
     </div>

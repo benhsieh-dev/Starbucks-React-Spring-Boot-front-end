@@ -2,6 +2,7 @@ import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from "react-helmet";
 import Navbar from "./layout/Navbar";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <link rel="canonical" href="http://www.starbucks.com" />
       </Helmet>
       <Navbar />
+      <Home />
     </div>
   );
 }
