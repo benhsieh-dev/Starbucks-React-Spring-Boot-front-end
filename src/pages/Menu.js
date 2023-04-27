@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Menu() {
   const [drinks, setDrinks] = useState([]);
@@ -37,11 +38,11 @@ export default function Menu() {
                 <td>{drink.name}</td>
                 <td>{drink.category}</td>
                 <td>{drink.subcategory}</td>
-                <td>{drink.price}</td>
+                <td>{drink.price.toFixed(2)}</td>
                 <td>{drink.imageUrl}</td>
                 <td>
                   <button className="btn btn-primary mx-2">View</button>
-                  <button className="btn btn-outline-primary mx-2">Edit</button>
+                  <Link className="btn btn-outline-primary mx-2" to={`/editdrink/${drink.id}`}>Edit</Link>
                   <button className="btn btn-danger mx-2">Delete</button>
                 </td>
               </tr>
