@@ -6,6 +6,7 @@ import Menu from "./pages/Menu";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AddDrink from "./drinks/AddDrink";
 import EditDrink from "./drinks/EditDrink";
+import ViewDrink from "./drinks/ViewDrink";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/" element={<Menu />} />
           <Route exact path="/adddrink" element={<AddDrink />} />
           <Route exact path="/editdrink/:id" element={<EditDrink />} />
+          <Route exact path="/viewdrink/:id" element={<ViewDrink />} />
         </Routes>
       </Router>
     </div>

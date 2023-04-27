@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Link, useParams } from "react-router-dom";
+// import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Menu() {
   const [drinks, setDrinks] = useState([]);
 
-  const { id } = useParams();
+  // const { id } = useParams();
 
   useEffect(() => {
     loadDrinks();
@@ -48,7 +49,12 @@ export default function Menu() {
                 <td>{drink.price.toFixed(2)}</td>
                 <td>{drink.imageUrl}</td>
                 <td>
-                  <button className="btn btn-primary mx-2">View</button>
+                  <Link
+                    className="btn btn-primary mx-2"
+                    to={`/viewdrink/${drink.id}`}
+                  >
+                    View
+                  </Link>
                   <Link
                     className="btn btn-outline-primary mx-2"
                     to={`/editdrink/${drink.id}`}
