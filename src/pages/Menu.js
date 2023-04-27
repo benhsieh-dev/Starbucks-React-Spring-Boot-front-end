@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function Menu() {
   const [drinks, setDrinks] = useState([]);
+
+  const { id } = useParams();
 
   useEffect(() => {
     loadDrinks();
@@ -12,6 +14,11 @@ export default function Menu() {
   const loadDrinks = async () => {
     const result = await axios.get("http://localhost:8080/drinks");
     setDrinks(result.data);
+  };
+
+  const deleteDrink = async (id) => {
+    await axios.delete(`http://localhost:8080/drink/${id}`);
+    loadDrinks();
   };
 
   return (
@@ -42,8 +49,18 @@ export default function Menu() {
                 <td>{drink.imageUrl}</td>
                 <td>
                   <button className="btn btn-primary mx-2">View</button>
-                  <Link className="btn btn-outline-primary mx-2" to={`/editdrink/${drink.id}`}>Edit</Link>
-                  <button className="btn btn-danger mx-2">Delete</button>
+                  <Link
+                    className="btn btn-outline-primary mx-2"
+                    to={`/editdrink/${drink.id}`}
+                  >
+                    Edit
+                  </Link>
+                  <button
+                    className="btn btn-danger mx-2"
+                    onClick={() => deleteDrink(drink.id)}
+                  >
+                    Delete
+                  </button>
                 </td>
               </tr>
             ))}
