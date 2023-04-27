@@ -15,9 +15,9 @@ export default function Navbar() {
         </Link>
         <div className="container-fluid">
           <div className="left-navigation-menu">
-            <a className="navbar-brand" href="www.google.com">
+            <Link to="/menu">
               MENU
-            </a>
+            </Link>
             <a className="navbar-brand" href="www.amazon.com">
               REWARDS
             </a>

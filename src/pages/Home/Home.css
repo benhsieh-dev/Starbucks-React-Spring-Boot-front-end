@@ -1,0 +1,12 @@
+.row-1-container {
+    display: flex;
+}
+
+.row-1-right {
+        background-color: #a0c291;
+}
+
+.block {
+    height: 300px;
+    width: 400px;
+}

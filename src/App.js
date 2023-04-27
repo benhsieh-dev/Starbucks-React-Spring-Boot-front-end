@@ -2,6 +2,7 @@ import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from "react-helmet";
 import Navbar from "./layout/Navbar";
+import Home from "./pages/Home/Home";
 import Menu from "./pages/Menu";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AddDrink from "./drinks/AddDrink";
@@ -19,7 +20,8 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Menu />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/menu" element={<Menu />} />
           <Route exact path="/adddrink" element={<AddDrink />} />
           <Route exact path="/editdrink/:id" element={<EditDrink />} />
           <Route exact path="/viewdrink/:id" element={<ViewDrink />} />
