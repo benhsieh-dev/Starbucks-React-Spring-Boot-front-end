@@ -1,4 +1,5 @@
 import React from "react";
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -15,16 +16,28 @@ export default function Navbar() {
         </Link>
         <div className="container-fluid">
           <div className="left-navigation-menu">
-            <Link to="/menu">
+            <Link className="navbar-brand" to="/menu">
               MENU
             </Link>
-            <a className="navbar-brand" href="www.amazon.com">
+            <Link className="navbar-brand" to="/rewards">
               REWARDS
-            </a>
-            <a className="navbar-brand" href="www.youtube.com">
+            </Link>
+            <Link className="navbar-brand" to="/giftcards">
               GIFT CARDS
-            </a>
+            </Link>
             <Link to="/adddrink">Add Menu Item</Link>
+          </div>
+
+          <div className="right-navigation-menu">
+            <Link className="navbar-brand" to="/storelocator">
+              Find a store
+            </Link>
+            <Link className="navbar-brand" to="/signin">
+              Sign in
+            </Link>
+            <Link className="navbar-brand" to="/signup">
+              Join now
+            </Link>
           </div>
         </div>
       </nav>

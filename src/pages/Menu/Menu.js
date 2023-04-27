@@ -47,7 +47,7 @@ export default function Menu() {
                 <td>{drink.category}</td>
                 <td>{drink.subcategory}</td>
                 <td>{drink.price.toFixed(2)}</td>
-                <td>{drink.imageUrl}</td>
+                <td><img className="menu-item" alt="menu item" src={drink.imageUrl} /></td>
                 <td>
                   <Link
                     className="btn btn-primary mx-2"
