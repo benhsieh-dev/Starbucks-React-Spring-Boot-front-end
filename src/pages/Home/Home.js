@@ -1,12 +1,23 @@
 import React from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <div>
       <hr></hr>
+
       <div className="row-1 container">
-        <div className="row-1-left"></div>
+        <div className="row-1-left">
+          <h1>Cups of appreciation</h1>
+          <p>
+            This Administrative 
+            Professional's Day, express
+            your thanks with a well-deserved
+            Starbucks Card.
+          </p>
+          <Link to="/giftcards">Send an eGift</Link>
+        </div>
         <div className="row-1-right">
           <img
             alt="Gift card that reads, “Great Work Deserves Coffee.”"
@@ -15,6 +26,7 @@ export default function Home() {
           ></img>
         </div>
       </div>
+
     </div>
   );
 }

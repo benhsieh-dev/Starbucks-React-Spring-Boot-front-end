@@ -7,4 +7,17 @@
     font-weight: 700;
     font-size: 14px;
     font-style: normal;
+    /* width: 50%; */
+}
+
+.left-navigation-menu {
+    margin-right: 34%; 
+}
+
+.right-navigation-menu {
+    margin-right: 6%;
+}
+
+.container-fluid {
+    width: 75%;
 }
