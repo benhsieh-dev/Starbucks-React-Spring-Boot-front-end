@@ -35,7 +35,7 @@ export default function Navbar() {
             <Link className="navbar-brand" to="/signin">
               Sign in
             </Link>
-            <Link className="navbar-brand" to="/signup">
+            <Link className="navbar-brand" to="/account/create">
               Join now
             </Link>
           </div>
