@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import Navbar from "./layout/Navbar";
 import Home from "./pages/Home/Home";
 import Menu from "./pages/Menu/Menu";
+import HotCoffees from "./pages/Menu/HotCoffees/HotCoffees";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AddDrink from "./drinks/AddDrink";
 import EditDrink from "./drinks/EditDrink";
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/menu" element={<Menu />} />
+          <Route exact path="/menu/drinks/hot-coffees" element={<HotCoffees />} />
           <Route exact path="/rewards" element={<Rewards />} />
           <Route exact path="/giftcards" element={<GiftCards />} />
           <Route exact path="/storelocator" element={<StoreLocator />} />
