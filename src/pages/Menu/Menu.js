@@ -18,6 +18,19 @@ export default function Menu() {
           <Link to="/adddrink">Favorite Products</Link>
         </div>
       </nav>
+      <div className="side-bar">
+        <ul>
+          <h3>Drinks</h3>
+          <li>Oleato™</li>
+          <li>Hot Coffees</li>
+          <li>Hot Teas</li>
+          <li>Hot Drinks</li>
+          <li>Frappuccino® Blended Beverages</li>
+          <li>Cold Coffees</li>
+          <li>Iced Teas</li>
+          <li>Cold Drinks</li>
+        </ul>
+      </div>
     </div>
   );
 }
