@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Menu.css";
+
 
 export default function Menu() {
   return (
@@ -18,7 +20,7 @@ export default function Menu() {
           <Link to="/adddrink">Favorite Products</Link>
         </div>
       </nav>
-      <div className="side-bar">
+      <div className="sidebar">
         <ul>
           <h3>Drinks</h3>
           <li>Oleato™</li>
