@@ -5,6 +5,7 @@ export default function AllProducts() {
     <div>
       <h2>Menu</h2>
       <h3>Drinks</h3>
+      <hr />
       <div className="image-container">
         <img
           className="menu-item left"
