@@ -28,7 +28,11 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/menu" element={<Menu />} />
-          <Route exact path="/menu/drinks/hot-coffees" element={<HotCoffees />} />
+          <Route
+            exact
+            path="/menu/drinks/hot-coffees"
+            element={<HotCoffees />}
+          />
           <Route exact path="/rewards" element={<Rewards />} />
           <Route exact path="/giftcards" element={<GiftCards />} />
           <Route exact path="/storelocator" element={<StoreLocator />} />
