@@ -1,3 +1,25 @@
 .image-container {
     direction: flex;
 }
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.all-products-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-panel {
+    display: flex;   
+    flex-direction: column;
+    width: 80%;
+}
+
+.all-products-menu {
+    display: flex;
+    justify-content: space-between;
+}
