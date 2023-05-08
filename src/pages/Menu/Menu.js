@@ -17,7 +17,9 @@ export default function Menu() {
           <Link className="navbar-brand" to="/giftcards">
             Previous Orders
           </Link>
-          <Link to="/adddrink">Favorite Products</Link>
+          <Link className="navbar-brand" to="/adddrink">
+            Favorite Products
+          </Link>
         </div>
       </nav>
       <div className="menu-container">

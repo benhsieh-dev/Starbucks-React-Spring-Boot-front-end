@@ -16,10 +16,23 @@
 .display-panel {
     display: flex;   
     flex-direction: column;
-    width: 80%;
+    width: 85%;
 }
 
 .all-products-menu {
     display: flex;
-    justify-content: space-between;
+}
+
+.right-side {
+    margin-left: 20em; 
+}
+
+.sidebar-link {
+    color: #6b6b6b;
+}
+
+.display-panel-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }

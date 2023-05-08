@@ -6,22 +6,24 @@ export default function AllProducts() {
   return (
     <div>
       <div className="all-products-container">
-
         <div className="sidebar">
           <h3>Drinks</h3>
-          <Link>Oleato™</Link>
-          <Link to="/menu/drinks/hot-coffees">Hot Coffees</Link>
-          <Link>Hot Teas</Link>
-          <Link>Hot Drinks</Link>
-          <Link>Frappuccino® Blended Beverages</Link>
-          <Link>Cold Coffees</Link>
-          <Link>Iced Teas</Link>
-          <Link>Cold Drinks</Link>
+          <Link className="sidebar-link">Oleato™</Link>
+          <Link className="sidebar-link" to="/menu/drinks/hot-coffees">
+            Hot Coffees
+          </Link>
+          <Link className="sidebar-link">Hot Teas</Link>
+          <Link className="sidebar-link">Hot Drinks</Link>
+          <Link className="sidebar-link">Frappuccino® Blended Beverages</Link>
+          <Link className="sidebar-link">Cold Coffees</Link>
+          <Link className="sidebar-link">Iced Teas</Link>
+          <Link className="sidebar-link">Cold Drinks</Link>
         </div>
 
         <div className="display-panel">
           <div className="display-panel-intro">
             <h2>Menu</h2>
+            <br />
             <h3>Drinks</h3>
             <hr />
           </div>
@@ -48,7 +50,6 @@ export default function AllProducts() {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );
