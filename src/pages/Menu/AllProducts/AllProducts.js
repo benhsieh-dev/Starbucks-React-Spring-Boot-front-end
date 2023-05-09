@@ -37,7 +37,19 @@ export default function AllProducts() {
                 ></img>
                 <span className="right">Oleato™</span>
               </div>
+
+              <br />
+
+              <div className="image-container">
+                <img
+                  className="menu-item"
+                  alt="Hot Teas"
+                  src="https://globalassets.starbucks.com/assets/2d52f16a22fb40ff898be1815ecc952e.jpg?impolicy=1by1_wide_topcrop_630"
+                ></img>
+                <span className="right">Hot Teas</span>
+              </div>
             </div>
+
             <div className="right-side">
               <div className="image-container">
                 <img
@@ -46,6 +58,17 @@ export default function AllProducts() {
                   src="https://globalassets.starbucks.com/assets/f12bc8af498d45ed92c5d6f1dac64062.jpg?impolicy=1by1_wide_topcrop_630"
                 ></img>
                 <span className="right">Hot Coffees</span>
+              </div>
+
+              <br />
+
+              <div className="image-container">
+                <img
+                  className="menu-item"
+                  alt="Hot Teas"
+                  src="https://globalassets.starbucks.com/assets/677d276173ec4bc192c2b9a21776339f.jpg?impolicy=1by1_wide_topcrop_630"
+                ></img>
+                <span className="right">Hot Drinks</span>
               </div>
             </div>
           </div>

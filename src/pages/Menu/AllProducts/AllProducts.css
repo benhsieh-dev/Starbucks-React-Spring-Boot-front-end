@@ -16,7 +16,7 @@
 .display-panel {
     display: flex;   
     flex-direction: column;
-    width: 85%;
+    width: 80%;
 }
 
 .all-products-menu {
