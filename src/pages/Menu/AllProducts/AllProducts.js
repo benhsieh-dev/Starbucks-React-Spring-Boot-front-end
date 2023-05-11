@@ -48,6 +48,26 @@ export default function AllProducts() {
                 ></img>
                 <span>Hot Teas</span>
               </div>
+
+              <br />
+              <div className="image-container">
+                <img
+                  className="menu-item"
+                  alt="Frappuccino® Blended Beverages"
+                  src="https://globalassets.starbucks.com/assets/7FD73D3C93AF43FFA84400A42EFC9F87.jpg?impolicy=1by1_wide_topcrop_630"
+                ></img>
+                <span>Frappuccino® Blended Beverages</span>
+              </div>
+
+              <br />
+              <div className="image-container">
+                <img
+                  className="menu-item"
+                  alt="Iced Teas"
+                  src="https://globalassets.starbucks.com/assets/de6d02e888c74eac9f6ea19c5492b8e8.jpg?impolicy=1by1_medium_630"
+                ></img>
+                <span>Iced Teas</span>
+              </div>
             </div>
 
             <div className="right-side">
@@ -61,7 +81,6 @@ export default function AllProducts() {
               </div>
 
               <br />
-
               <div className="image-container">
                 <img
                   className="menu-item"
@@ -69,6 +88,26 @@ export default function AllProducts() {
                   src="https://globalassets.starbucks.com/assets/677d276173ec4bc192c2b9a21776339f.jpg?impolicy=1by1_wide_topcrop_630"
                 ></img>
                 <span>Hot Drinks</span>
+              </div>
+
+              <br />
+              <div className="image-container">
+                <img
+                  className="menu-item"
+                  alt="Cold Coffees"
+                  src="https://globalassets.starbucks.com/assets/3DB27F5E792C48E9B867A443AA648D26.jpg?impolicy=1by1_wide_topcrop_630"
+                ></img>
+                <span>Cold Coffees</span>
+              </div>
+
+              <br />
+              <div className="image-container">
+                <img
+                  className="menu-item"
+                  alt="Cold Drinks"
+                  src="https://globalassets.starbucks.com/assets/358b62402a844a3e9567d70a9790032f.jpg?impolicy=1by1_wide_topcrop_630"
+                ></img>
+                <span>Cold Drinks</span>
               </div>
             </div>
           </div>
