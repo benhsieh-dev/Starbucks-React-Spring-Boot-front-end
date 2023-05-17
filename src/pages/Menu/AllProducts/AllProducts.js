@@ -26,6 +26,7 @@ export default function AllProducts() {
             <br />
             <h3>Drinks</h3>
             <hr />
+            <br />
           </div>
           <div className="all-products-menu">
             <div className="left-side">
@@ -111,6 +112,12 @@ export default function AllProducts() {
               </div>
             </div>
           </div>
+
+          <div className="food-section">
+            <h3>Food</h3>
+            <hr />
+          </div>
+
         </div>
       </div>
     </div>
