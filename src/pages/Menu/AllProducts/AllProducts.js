@@ -45,7 +45,7 @@ export default function AllProducts() {
                 <img
                   className="menu-item"
                   alt="Hot Teas"
-                  src="https://globalassets.starbucks.com/assets/2d52f16a22fb40ff898be1815ecc952e.jpg?impolicy=1by1_wide_topcrop_630"
+                  src="/assets/images/drinks/Hot Teas/hot_teas.avif" 
                 ></img>
                 <span>Hot Teas</span>
               </div>
