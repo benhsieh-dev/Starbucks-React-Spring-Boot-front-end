@@ -14,6 +14,7 @@ import GiftCards from "./pages/GiftCards/GiftCards";
 import StoreLocator from "./pages/StoreLocator/StoreLocator";
 import SignIn from "./pages/SignIn/SignIn";
 import JoinNow from "./pages/JoinNow/JoinNow";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route exact path="/adddrink" element={<AddDrink />} />
           <Route exact path="/editdrink/:id" element={<EditDrink />} />
           <Route exact path="/viewdrink/:id" element={<ViewDrink />} />
+          <Route exact path="/account/create" element={<Register />} />
         </Routes>
       </Router>
     </div>
