@@ -45,7 +45,7 @@ export default function AllProducts() {
                 <img
                   className="menu-item"
                   alt="Hot Teas"
-                  src="/assets/images/drinks/Hot Teas/hot_teas.avif" 
+                  src="/assets/images/drinks/Hot Teas/hot_teas.avif"
                 ></img>
                 <span>Hot Teas</span>
               </div>
@@ -76,7 +76,7 @@ export default function AllProducts() {
                 <img
                   className="menu-item"
                   alt="Hot Coffees"
-                  src="/assets/images/drinks/hot coffees/caffè americano.png"
+                  src="/assets/images/drinks/Hot Coffees/caffè americano.png"
                 ></img>
                 <span>Hot Coffees</span>
               </div>
@@ -85,8 +85,8 @@ export default function AllProducts() {
               <div className="image-container">
                 <img
                   className="menu-item"
-                  alt="Hot Teas"
-                  src="https://globalassets.starbucks.com/assets/677d276173ec4bc192c2b9a21776339f.jpg?impolicy=1by1_wide_topcrop_630"
+                  alt="Hot Drinks"
+                  src="/assets/images/drinks/Hot Drinks/hot_drinks.avif"
                 ></img>
                 <span>Hot Drinks</span>
               </div>
