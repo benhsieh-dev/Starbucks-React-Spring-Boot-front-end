@@ -55,7 +55,7 @@ export default function AllProducts() {
                 <img
                   className="menu-item"
                   alt="Frappuccino® Blended Beverages"
-                  src="https://globalassets.starbucks.com/assets/7FD73D3C93AF43FFA84400A42EFC9F87.jpg?impolicy=1by1_wide_topcrop_630"
+                  src="/assets/images/drinks/Frappuccino® Blended Beverages/Frappuccino®.avif"
                 ></img>
                 <span>Frappuccino® Blended Beverages</span>
               </div>
