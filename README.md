@@ -4,9 +4,11 @@ Customers can buy sell coffees and earn reward points
 ## Technologies Used
 - Axios
 - CSS
-- JavaScript
-- Spring Boot 
-- My SQL
 - Hibernate
+- Java
+- JavaScript
+- My SQL
+- React JS
+- Spring Boot 
 
 ## Future Considerations

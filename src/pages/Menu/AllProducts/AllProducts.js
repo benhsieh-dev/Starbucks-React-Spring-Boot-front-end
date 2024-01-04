@@ -96,7 +96,7 @@ export default function AllProducts() {
                 <img
                   className="menu-item"
                   alt="Cold Coffees"
-                  src="https://globalassets.starbucks.com/assets/3DB27F5E792C48E9B867A443AA648D26.jpg?impolicy=1by1_wide_topcrop_630"
+                  src="/assets/images/drinks/Cold Coffees/PistachioCreamColdBrew.avif"
                 ></img>
                 <span>Cold Coffees</span>
               </div>
