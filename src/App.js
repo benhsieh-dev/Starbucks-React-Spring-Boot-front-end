@@ -1,6 +1,6 @@
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import Navbar from "./layout/Navbar";
 import Home from "./pages/Home/Home";
 import Menu from "./pages/Menu/Menu";
@@ -19,11 +19,15 @@ import Register from "./components/Register";
 function App() {
   return (
     <div className="App">
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Starbucks Coffee Company</title>
-        <link rel="canonical" href="http://www.starbucks.com" />
-      </Helmet>
+      <HelmetProvider>
+        <div>
+          <Helmet>
+            <meta charSet="utf-8" />
+            <title>Starbucks Coffee Company</title>
+            <link rel="canonical" href="http://www.starbucks.com" />
+          </Helmet>
+        </div>
+      </HelmetProvider>
       <Router>
         <Navbar />
         <Routes>

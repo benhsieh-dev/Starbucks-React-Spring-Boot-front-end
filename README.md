@@ -5,9 +5,11 @@ Customers can buy sell coffees and earn reward points
 - Axios
 - CSS
 - Hibernate
+- HTML
 - Java
 - JavaScript
 - My SQL
+- Node JS
 - React JS
 - Spring Boot 
 
