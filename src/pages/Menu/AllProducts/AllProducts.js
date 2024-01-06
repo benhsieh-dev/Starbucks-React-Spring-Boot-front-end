@@ -65,7 +65,7 @@ export default function AllProducts() {
                 <img
                   className="menu-item"
                   alt="Iced Teas"
-                  src="/assets/images/drinks/Hot Teas/SBX20230612_6244_GingerbreadOatmilkChai-onGreen-MOP_1800.avif"
+                  src="/assets/images/drinks/Iced Teas/SBX20190531_IcedBlackTea.avif"
                 ></img>
                 <span>Iced Teas</span>
               </div>
