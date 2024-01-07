@@ -106,7 +106,7 @@ export default function AllProducts() {
                 <img
                   className="menu-item"
                   alt="Cold Drinks"
-                  src="https://globalassets.starbucks.com/assets/358b62402a844a3e9567d70a9790032f.jpg?impolicy=1by1_wide_topcrop_630"
+                  src="/assets/images/drinks/Cold Drinks/SBX20221216_FrozenPineapplePassionfruitRefresherLemonade.avif"
                 ></img>
                 <span>Cold Drinks</span>
               </div>
