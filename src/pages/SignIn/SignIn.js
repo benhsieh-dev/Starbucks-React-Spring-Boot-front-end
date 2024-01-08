@@ -21,7 +21,7 @@ export default function SignIn() {
             if (res.data.message === "Email does not exist") {
               alert("Email does not exist");
             } else if (res.data.message === "Login Successful!") {
-              navigate("/menu");
+              navigate("/account");
             } else {
               alert("Email and password are incorrect");
             }

@@ -1,8 +1,9 @@
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Navbar from "./layout/Navbar";
+import Navbar from "./navbar/Splash/Navbar";
 import Home from "./pages/Home/Home";
+import Account from "./pages/Account/Account";
 import Menu from "./pages/Menu/Menu";
 import HotCoffees from "./pages/Menu/HotCoffees/HotCoffees";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -32,6 +33,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/account" element={<Account />} />
           <Route exact path="/menu" element={<Menu />} />
           <Route
             exact

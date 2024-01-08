@@ -1,8 +1,8 @@
 import React from "react";
-import "./Navbar.css";
+import "./AccountNavBar.css";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function AccountNavbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -31,12 +31,6 @@ export default function Navbar() {
           <div className="right-navigation-menu">
             <Link className="navbar-brand" to="/storelocator">
               Find a store
-            </Link>
-            <Link className="navbar-brand" to="/signin">
-              Sign in
-            </Link>
-            <Link className="navbar-brand" to="/account/create">
-              Join now
             </Link>
           </div>
         </div>
