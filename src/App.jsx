@@ -16,8 +16,12 @@ import StoreLocator from "./pages/StoreLocator/StoreLocator";
 import SignIn from "./pages/SignIn/SignIn";
 import JoinNow from "./pages/JoinNow/JoinNow";
 import Register from "./components/Register";
+import { useState } from "react";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userName, setUserName] = useState(""); 
+
   return (
     <div className="App">
       <HelmetProvider>
@@ -32,23 +36,73 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/account" element={<Account />} />
-          <Route exact path="/menu" element={<Menu />} />
+          <Route
+            exact
+            path="/"
+            element={<Home isLoggedIn={isLoggedIn} userName={userName} />}
+          />
+          <Route
+            exact
+            path="/account"
+            element={<Account isLoggedIn={isLoggedIn} userName={userName} />}
+          />
+          <Route
+            exact
+            path="/menu"
+            element={<Menu isLoggedIn={isLoggedIn} userName={userName} />}
+          />
           <Route
             exact
             path="/menu/drinks/hot-coffees"
-            element={<HotCoffees />}
+            element={<HotCoffees isLoggedIn={isLoggedIn} userName={userName} />}
           />
-          <Route exact path="/rewards" element={<Rewards />} />
-          <Route exact path="/giftcards" element={<GiftCards />} />
-          <Route exact path="/storelocator" element={<StoreLocator />} />
-          <Route exact path="/signin" element={<SignIn />} />
-          <Route exact path="/account/create" element={<JoinNow />} />
-          <Route exact path="/adddrink" element={<AddDrink />} />
-          <Route exact path="/editdrink/:id" element={<EditDrink />} />
-          <Route exact path="/viewdrink/:id" element={<ViewDrink />} />
-          <Route exact path="/account/create" element={<Register />} />
+          <Route
+            exact
+            path="/rewards"
+            element={<Rewards isLoggedIn={isLoggedIn} userName={userName} />}
+          />
+          <Route
+            exact
+            path="/giftcards"
+            element={<GiftCards isLoggedIn={isLoggedIn} userName={userName} />}
+          />
+          <Route
+            exact
+            path="/storelocator"
+            element={
+              <StoreLocator isLoggedIn={isLoggedIn} userName={userName} />
+            }
+          />
+          <Route
+            exact
+            path="/signin"
+            element={<SignIn isLoggedIn={isLoggedIn} userName={userName} />}
+          />
+          <Route
+            exact
+            path="/account/create"
+            element={<JoinNow isLoggedIn={isLoggedIn} userName={userName} />}
+          />
+          <Route
+            exact
+            path="/adddrink"
+            element={<AddDrink isLoggedIn={isLoggedIn} userName={userName} />}
+          />
+          <Route
+            exact
+            path="/editdrink/:id"
+            element={<EditDrink isLoggedIn={isLoggedIn} userName={userName} />}
+          />
+          <Route
+            exact
+            path="/viewdrink/:id"
+            element={<ViewDrink isLoggedIn={isLoggedIn} userName={userName} />}
+          />
+          <Route
+            exact
+            path="/account/create"
+            element={<Register isLoggedIn={isLoggedIn} userName={userName} />}
+          />
         </Routes>
       </Router>
     </div>

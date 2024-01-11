@@ -2,19 +2,18 @@ import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
-export default function Home() {
+const Home = (props) => {
   return (
     <div>
+      <h2>Welcome {props.userName}</h2>
       <hr></hr>
 
       <div className="row-1 container">
         <div className="row-1-left">
           <h1>Cups of appreciation</h1>
           <p>
-            This Administrative 
-            Professional's Day, express
-            your thanks with a well-deserved
-            Starbucks Card.
+            This Administrative Professional's Day, express your thanks with a
+            well-deserved Starbucks Card.
           </p>
           <Link to="/giftcards">Send an eGift</Link>
         </div>
@@ -26,7 +25,8 @@ export default function Home() {
           ></img>
         </div>
       </div>
-
     </div>
   );
 }
+
+export default Home; 
