@@ -1,11 +1,14 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AppContext } from "../../App";
 
 const Home = (props) => {
+  const {userName, isLoggedIn} = useContext(AppContext); 
   return (
     <div>
-      <h2>Welcome {props.userName}</h2>
+      <h2>Welcome {userName}</h2>
       <hr></hr>
 
       <div className="row-1 container">
