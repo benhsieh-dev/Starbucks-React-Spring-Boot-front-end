@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import App, { AppContext } from "../App";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { setIsloggedIn, isLoggedIn } = useContext(App);
   const navigate = useNavigate();
 
   async function login(event) {
@@ -22,6 +24,7 @@ function Login() {
             if (res.data.message === "Email not exits") {
               alert("Email not exits");
             } else if (res.data.message === "Login Success") {
+              setIsloggedIn(true); 
               navigate("/home");
             } else {
               alert("Incorrect Email and Password not match");

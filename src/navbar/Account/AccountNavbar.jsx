@@ -1,5 +1,5 @@
 import React from "react";
-import "./AccountNavBar.css";
+import "./AccountNavbar.css"; 
 import { Link } from "react-router-dom";
 
 export default function AccountNavbar() {
@@ -9,7 +9,7 @@ export default function AccountNavbar() {
         <div className="container-fluid">
           <Link to="/">
             <img
-              src={require("../assets/images/starbucks-logo.png")}
+              src={require("../../assets/images/starbucks-logo.png")}
               alt="Starbucks logo"
               width="60"
               height="60"

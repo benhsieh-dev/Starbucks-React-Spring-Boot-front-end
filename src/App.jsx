@@ -2,6 +2,7 @@ import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Navbar from "./navbar/Splash/Navbar";
+import AccountNavbar from "./navbar/Account/AccountNavbar"; 
 import Home from "./pages/Home/Home";
 import Account from "./pages/Account/Account";
 import Menu from "./pages/Menu/Menu";
@@ -38,7 +39,7 @@ function App() {
 
       <AppContext.Provider value={{isLoggedIn, setIsLoggedIn, userName, setUserName}}>    
         <Router>
-          <Navbar />
+          { isLoggedIn === false ? <Navbar /> : <AccountNavbar /> }
           <Routes>
             <Route
               exact
