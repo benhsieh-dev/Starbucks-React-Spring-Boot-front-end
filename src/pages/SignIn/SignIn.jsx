@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { LoginContext } from "../../App";
 import axios from "axios";
 
 export default function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loggedIn, setLoggedIn] = useContext(LoginContext); 
+  
   const navigate = useNavigate();
-
+  useEffect(() => console.log(loggedIn));
+  
   async function login(event) {
     event.preventDefault();
     try {
@@ -21,7 +25,8 @@ export default function SignIn() {
             if (res.data.message === "Email does not exist") {
               alert("Email does not exist");
             } else if (res.data.message === "Login Successful!") {
-              navigate("/account");
+               setLoggedIn(true);
+               navigate("/account");
             } else {
               alert("Email and password are incorrect");
             }

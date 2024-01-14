@@ -1,14 +1,16 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { AppContext } from "../../App";
+import { useContext, useEffect } from "react";
+import { LoginContext } from "../../App";
 
-const Home = (props) => {
-  const {userName, isLoggedIn} = useContext(AppContext); 
+const Home = () => {
+  const loggedIn = useContext(LoginContext); 
+  useEffect(() => console.log(loggedIn));
+
   return (
     <div>
-      <h2>Welcome {userName}</h2>
+      <h2>Welcome </h2>
       <hr></hr>
 
       <div className="row-1 container">

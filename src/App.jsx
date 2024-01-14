@@ -17,100 +17,49 @@ import StoreLocator from "./pages/StoreLocator/StoreLocator";
 import SignIn from "./pages/SignIn/SignIn";
 import JoinNow from "./pages/JoinNow/JoinNow";
 import Register from "./components/Register";
-import { useState, createContext} from "react";
+import { createContext, useState } from "react";
 
-export const AppContext = createContext();
+export const LoginContext = createContext()
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [userName, setUserName] = useState(""); 
+  const [loggedIn, setLoggedIn] = useState(false);
 
   return (
     <div className="App">
-      <HelmetProvider>
-        <div>
-          <Helmet>
-            <meta charSet="utf-8" />
-            <title>Starbucks Coffee Company</title>
-            <link rel="canonical" href="http://www.starbucks.com" />
-          </Helmet>
-        </div>
-      </HelmetProvider>
+      <LoginContext.Provider value={ [loggedIn, setLoggedIn] }>
+        <HelmetProvider>
+          <div>
+            <Helmet>
+              <meta charSet="utf-8" />
+              <title>Starbucks Coffee Company</title>
+              <link rel="canonical" href="http://www.starbucks.com" />
+            </Helmet>
+          </div>
+        </HelmetProvider>
 
-      <AppContext.Provider value={{isLoggedIn, setIsLoggedIn, userName, setUserName}}>    
         <Router>
-          { isLoggedIn === false ? <Navbar /> : <AccountNavbar /> }
+          {loggedIn === false ? <Navbar /> : <AccountNavbar />}
           <Routes>
-            <Route
-              exact
-              path="/"
-              element={<Home />}
-            />
-            <Route
-              exact
-              path="/account"
-              element={<Account />}
-            />
-            <Route
-              exact
-              path="/menu"
-              element={<Menu />}
-            />
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/account" element={<Account />} />
+            <Route exact path="/menu" element={<Menu />} />
             <Route
               exact
               path="/menu/drinks/hot-coffees"
               element={<HotCoffees />}
             />
-            <Route
-              exact
-              path="/rewards"
-              element={<Rewards />}
-            />
-            <Route
-              exact
-              path="/giftcards"
-              element={<GiftCards />}
-            />
-            <Route
-              exact
-              path="/storelocator"
-              element={
-                <StoreLocator />
-              }
-            />
-            <Route
-              exact
-              path="/signin"
-              element={<SignIn />}
-            />
-            <Route
-              exact
-              path="/account/create"
-              element={<JoinNow />}
-            />
-            <Route
-              exact
-              path="/adddrink"
-              element={<AddDrink />}
-            />
-            <Route
-              exact
-              path="/editdrink/:id"
-              element={<EditDrink />}
-            />
-            <Route
-              exact
-              path="/viewdrink/:id"
-              element={<ViewDrink />}
-            />
-            <Route
-              exact
-              path="/account/create"
-              element={<Register />}
-            />
+            <Route exact path="/rewards" element={<Rewards />} />
+            <Route exact path="/giftcards" element={<GiftCards />} />
+            <Route exact path="/storelocator" element={<StoreLocator />} />
+            <Route exact path="/signin" element={<SignIn />} />
+            <Route exact path="/account/create" element={<JoinNow />} />
+            <Route exact path="/adddrink" element={<AddDrink />} />
+            <Route exact path="/editdrink/:id" element={<EditDrink />} />
+            <Route exact path="/viewdrink/:id" element={<ViewDrink />} />
+            <Route exact path="/account/create" element={<Register />} />
           </Routes>
         </Router>
-      </AppContext.Provider>
+      </LoginContext.Provider>
     </div>
   );
 }
