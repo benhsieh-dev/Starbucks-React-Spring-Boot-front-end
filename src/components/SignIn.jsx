@@ -1,14 +1,16 @@
-import { useState, useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import { LoginContext } from "../App";
+import axios from "axios";
 
-function Login() {
+export default function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [ setIsloggedIn, isLoggedIn ] = useContext(LoginContext);
+  const [loggedIn, setLoggedIn] = useContext(LoginContext); 
+  
   const navigate = useNavigate();
-
+  useEffect(() => console.log(loggedIn));
+  
   async function login(event) {
     event.preventDefault();
     try {
@@ -20,20 +22,17 @@ function Login() {
         .then(
           (res) => {
             console.log(res.data);
-
-            if (res.data.message === "Email not exits") {
-              alert("Email not exits");
-            } 
-            else if (res.data.message === "Login Success") {
-              setIsloggedIn(true); 
-              console.log("This is the login status: " + isLoggedIn);
-              navigate("/home");
+            if (res.data.message === "Email does not exist") {
+              alert("Email does not exist");
+            } else if (res.data.message === "Login Successful!") {
+               setLoggedIn(true);
+               navigate("/account");
             } else {
-              alert("Incorrect Email and Password not match");
+              alert("Email and password are incorrect");
             }
           },
           (fail) => {
-            console.error(fail); // Error!
+            console.log(fail);
           }
         );
     } catch (err) {
@@ -43,43 +42,43 @@ function Login() {
 
   return (
     <div>
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
           <h2>Login</h2>
           <hr />
         </div>
 
-        <div class="row">
-          <div class="col-sm-6">
+        <div className="row">
+          <div className="col-sm-6">
             <form>
-              <div class="form-group">
-                <label>Email</label>
+              <div className="form-group">
+                <label>email</label>
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="email"
-                  placeholder="Enter Name"
+                  placeholder="Enter Email"
                   value={email}
                   onChange={(event) => {
                     setEmail(event.target.value);
                   }}
                 />
               </div>
-
-              <div class="form-group">
+              <div className="form-group">
                 <label>password</label>
                 <input
                   type="password"
-                  class="form-control"
+                  className="form-control"
                   id="password"
-                  placeholder="Enter Fee"
+                  placeholder="Enter Password"
                   value={password}
                   onChange={(event) => {
                     setPassword(event.target.value);
                   }}
                 />
               </div>
-              <button type="submit" class="btn btn-primary" onClick={login}>
+
+              <button type="submit" className="btn btn-primary" onClick={login}>
                 Login
               </button>
             </form>
@@ -89,5 +88,3 @@ function Login() {
     </div>
   );
 }
-
-export default Login;

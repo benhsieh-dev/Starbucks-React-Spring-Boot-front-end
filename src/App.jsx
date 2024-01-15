@@ -14,7 +14,7 @@ import ViewDrink from "./drinks/ViewDrink";
 import Rewards from "./pages/Rewards/Rewards";
 import GiftCards from "./pages/GiftCards/GiftCards";
 import StoreLocator from "./pages/StoreLocator/StoreLocator";
-import SignIn from "./pages/SignIn/SignIn";
+import SignIn from "./components/SignIn";
 import JoinNow from "./pages/JoinNow/JoinNow";
 import Register from "./components/Register";
 import { createContext, useState } from "react";

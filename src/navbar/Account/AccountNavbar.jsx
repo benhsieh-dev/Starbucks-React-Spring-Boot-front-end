@@ -32,6 +32,7 @@ export default function AccountNavbar() {
             <Link className="navbar-brand" to="/storelocator">
               Find a store
             </Link>
+            <div className="navbar-brand">Account</div>
           </div>
         </div>
       </nav>

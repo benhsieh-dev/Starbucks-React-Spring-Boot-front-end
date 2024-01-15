@@ -3,7 +3,10 @@ import React from "react";
 export default function Account() {
   return (
     <div>
-      <h2>This is the account page</h2>
+      <img
+        src={require("../../assets/images/137-88178.jpg")}
+        alt="Starbucks Deals"
+      ></img>
     </div>
   );
 }
