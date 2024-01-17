@@ -1,6 +1,8 @@
 import React from "react";
 import "./AccountNavbar.css"; 
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 export default function AccountNavbar() {
   return (
@@ -29,10 +31,24 @@ export default function AccountNavbar() {
           </div>
 
           <div className="right-navigation-menu">
+            <FontAwesomeIcon icon={faLocationDot} />
             <Link className="navbar-brand" to="/storelocator">
               Find a store
             </Link>
-            <div className="navbar-brand">Account</div>
+            <div className="navbar-brand dropdown">
+              <button class="button">Account</button>
+              <div className="content">
+                <a href="www.google.com">Card Management</a>
+                <a href="www.google.com">My Rewards</a>
+                <a href="www.google.com">History</a>
+                <a href="www.google.com">Personal Info</a>
+                <a href="www.google.com">Payment Method</a>
+                <a href="www.google.com">Privacy and data</a>
+                <a href="www.google.com">Settings</a>
+                <hr />
+                <a href="www.google.com">Sign Out</a>
+              </div>
+            </div>
           </div>
         </div>
       </nav>

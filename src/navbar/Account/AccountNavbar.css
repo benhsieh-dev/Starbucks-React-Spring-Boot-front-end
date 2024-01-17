@@ -1,3 +1,29 @@
 .right-navigation-menu {
     display: flex;
 }
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.dropdown a {
+    color: #363636; 
+    display: block;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.dropdown a:hover {
+    background-color: #fff; 
+}
+
+.dropdown .content {
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover .content {
+    display: block;
+}
