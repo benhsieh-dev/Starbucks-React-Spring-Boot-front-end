@@ -2,7 +2,7 @@ import React from "react";
 import "./AccountNavbar.css"; 
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faCircleUser } from "@fortawesome/free-solid-svg-icons";
 
 export default function AccountNavbar() {
   return (
@@ -36,6 +36,7 @@ export default function AccountNavbar() {
               Find a store
             </Link>
             <div className="navbar-brand dropdown">
+              <FontAwesomeIcon icon={faCircleUser} />
               <button class="button">Account</button>
               <div className="content">
                 <a href="www.google.com">Card Management</a>
