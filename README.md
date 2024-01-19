@@ -3,6 +3,7 @@ Customers can buy sell coffees and earn reward points
 
 ## Technologies Used
 - Axios
+- Bootstrap 
 - CSS
 - Hibernate
 - HTML

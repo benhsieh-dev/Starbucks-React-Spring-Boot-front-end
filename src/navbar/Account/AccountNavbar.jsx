@@ -36,8 +36,10 @@ export default function AccountNavbar() {
               Find a store
             </Link>
             <div className="navbar-brand dropdown">
-              <FontAwesomeIcon icon={faCircleUser} />
-              <button class="button">Account</button>
+              <div className="navbar-account">
+                <FontAwesomeIcon icon={faCircleUser} />
+                <button class="button">Account</button>
+              </div>
               <div className="content">
                 <a href="www.google.com">Card Management</a>
                 <a href="www.google.com">My Rewards</a>

@@ -6,7 +6,7 @@ import axios from "axios";
 export default function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [setLoggedIn] = useContext(LoginContext); 
+  const [loggedIn, setLoggedIn] = useContext(LoginContext); 
   
   const navigate = useNavigate();
 
@@ -24,7 +24,8 @@ export default function SignIn() {
             if (res.data.message === "Email does not exist") {
               alert("Email does not exist");
             } else if (res.data.message === "Login Successful!") {
-               setLoggedIn(true);
+               setLoggedIn(true); 
+               console.log(loggedIn); 
                navigate("/account");
             } else {
               alert("Email and password are incorrect");

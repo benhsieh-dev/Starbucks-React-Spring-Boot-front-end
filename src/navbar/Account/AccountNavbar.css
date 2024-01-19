@@ -27,3 +27,9 @@
 .dropdown:hover .content {
     display: block;
 }
+
+.navbar-account {
+    display: flex;
+    width: 125px;
+    justify-content: space-between;
+}
