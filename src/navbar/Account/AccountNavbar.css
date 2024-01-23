@@ -33,3 +33,8 @@
     width: 125px;
     justify-content: space-between;
 }
+
+.button {
+    background-color: #F8F9FA;
+    border: none;
+}
