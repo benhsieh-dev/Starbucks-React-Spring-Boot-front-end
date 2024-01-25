@@ -1,6 +1,8 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faCircleUser } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   return (
@@ -29,12 +31,14 @@ export default function Navbar() {
           </div>
 
           <div className="right-navigation-menu">
+            <FontAwesomeIcon className="fa" icon={faLocationDot} />
             <Link className="navbar-brand" to="/storelocator">
               Find a store
             </Link>
             <Link className="navbar-brand" to="/signin">
               Sign in
             </Link>
+            <FontAwesomeIcon icon={faCircleUser} />
             <Link className="navbar-brand" to="/account/create">
               Join now
             </Link>

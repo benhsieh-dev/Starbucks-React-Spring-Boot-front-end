@@ -38,3 +38,8 @@
     background-color: #F8F9FA;
     border: none;
 }
+
+.icon {
+    display: flex;
+    width: 150px; 
+}

@@ -31,13 +31,15 @@ export default function AccountNavbar() {
           </div>
 
           <div className="right-navigation-menu">
-            <FontAwesomeIcon icon={faLocationDot} />
-            <Link className="navbar-brand" to="/storelocator">
-              Find a store
-            </Link>
+            <div className="icon">
+              <FontAwesomeIcon className="fa" icon={faLocationDot} />
+              <Link className="navbar-brand" to="/storelocator">
+                Find a store
+              </Link>
+            </div>
             <div className="navbar-brand dropdown">
-              <div className="navbar-account">
-                <FontAwesomeIcon icon={faCircleUser} />
+              <div className="navbar-account icon">
+                <FontAwesomeIcon className="fa" icon={faCircleUser} />
                 <button class="button">Account</button>
               </div>
               <div className="content">
