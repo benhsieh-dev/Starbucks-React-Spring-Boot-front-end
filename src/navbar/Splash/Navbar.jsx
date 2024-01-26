@@ -38,7 +38,7 @@ export default function Navbar() {
             <Link className="navbar-brand" to="/signin">
               Sign in
             </Link>
-            <FontAwesomeIcon icon={faCircleUser} />
+            <FontAwesomeIcon className="fa" icon={faCircleUser} />
             <Link className="navbar-brand" to="/account/create">
               Join now
             </Link>

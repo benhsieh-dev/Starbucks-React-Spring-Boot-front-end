@@ -10,7 +10,6 @@ const Home = () => {
 
   return (
     <div>
-      <h2>Welcome </h2>
       <hr></hr>
 
       <div className="row-1 container">
