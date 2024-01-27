@@ -18,8 +18,13 @@
     margin-right: 6%;
 }
 
-.container-fluid {
-    width: 75%;
+.splash-navbar-fluid {
+    /* width: 75%; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
 }
 
 /* .fa {

@@ -7,37 +7,38 @@ import { faLocationDot, faCircleUser } from "@fortawesome/free-solid-svg-icons";
 export default function AccountNavbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid">
-          <Link to="/">
-            <img
-              src={require("../../assets/images/starbucks-logo.png")}
-              alt="Starbucks logo"
-              width="60"
-              height="60"
-            ></img>
-          </Link>
+      <nav>
+        <div className="acct-navbar-container">
+
           <div className="left-navigation-menu">
-            <Link className="navbar-brand" to="/menu">
-              MENU
-            </Link>
-            <Link className="navbar-brand" to="/rewards">
-              REWARDS
-            </Link>
-            <Link className="navbar-brand" to="/giftcards">
-              GIFT CARDS
-            </Link>
-            <Link to="/adddrink">Add Menu Item</Link>
-          </div>
+              <Link to="/">
+                <img
+                  src={require("../../assets/images/starbucks-logo.png")}
+                  alt="Starbucks logo"
+                  width="60"
+                  height="60"
+                ></img>
+              </Link>
+              <Link to="/menu">
+                MENU
+              </Link>
+              <Link to="/rewards">
+                REWARDS
+              </Link>
+              <Link to="/giftcards">
+                GIFT CARDS
+              </Link>
+              <Link to="/adddrink">ADD MENU ITEM</Link>
+            </div>
 
           <div className="right-navigation-menu">
             <div className="icon">
               <FontAwesomeIcon className="fa" icon={faLocationDot} />
-              <Link className="navbar-brand" to="/storelocator">
+              <Link to="/storelocator">
                 Find a store
               </Link>
             </div>
-            <div className="navbar-brand dropdown">
+            <div className="dropdown">
               <div className="navbar-account icon">
                 <FontAwesomeIcon className="fa" icon={faCircleUser} />
                 <button class="button">Account</button>
@@ -57,6 +58,7 @@ export default function AccountNavbar() {
           </div>
         </div>
       </nav>
+      <hr />
     </div>
   );
 }

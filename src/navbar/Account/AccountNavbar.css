@@ -1,3 +1,18 @@
+.acct-navbar-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+}
+
+.left-navigation-menu {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    place-items: center;
+    width: 30vw;
+}
+
 .right-navigation-menu {
     display: flex;
 }
@@ -40,10 +55,8 @@
 }
 
 .icon {
-    display: flex;
-    width: 150px; 
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    place-items: center;
+    width: 8vw; 
 }
-
-/* .fa {
-    text-align: center;
-} */
