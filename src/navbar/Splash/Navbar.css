@@ -7,26 +7,30 @@
     font-weight: 700;
     font-size: 14px;
     font-style: normal;
-    /* width: 50%; */
 }
 
 .left-navigation-menu {
-    margin-right: 34%; 
+    /* margin-right: 34%;  */
 }
 
 .right-navigation-menu {
-    margin-right: 6%;
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    margin-right: 3.5vw;
 }
 
-.splash-navbar-fluid {
-    /* width: 75%; */
-    margin: 0 auto;
+.splash-navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80vw;
+    width: 70vw;
+    margin: 0 auto;
 }
 
-/* .fa {
-    text-align: center;
-} */
+.fa {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    place-items: center;
+    width: 6vw; 
+}
