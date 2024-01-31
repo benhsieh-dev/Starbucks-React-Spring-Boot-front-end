@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot, faCircleUser } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   return (
@@ -37,13 +37,12 @@ export default function Navbar() {
                 Find a store
               </Link>
             </div>
-            <div>
+            <div className="sign-in">
               <Link className="navbar-brand" to="/signin">
                 Sign in
               </Link>
             </div>
-            <div className="fa">
-              <FontAwesomeIcon icon={faCircleUser} />
+            <div className="fa join-now">
               <Link className="navbar-brand" to="/account/create">
                 Join now
               </Link>

@@ -34,3 +34,13 @@
     place-items: center;
     width: 6vw; 
 }
+
+.sign-in {
+    border: solid;
+}
+
+.join-now {
+    border: solid;
+    background-color: #000000;
+    color: #ffffff; 
+}
