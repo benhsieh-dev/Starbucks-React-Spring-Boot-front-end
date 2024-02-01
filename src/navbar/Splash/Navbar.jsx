@@ -37,15 +37,17 @@ export default function Navbar() {
                 Find a store
               </Link>
             </div>
-            <div className="sign-in">
-              <Link className="navbar-brand" to="/signin">
-                Sign in
-              </Link>
-            </div>
-            <div className="fa join-now">
-              <Link className="navbar-brand" to="/account/create">
-                Join now
-              </Link>
+            <div className="right-submenu">
+              <div className="sign-in">
+                <Link className="navbar-brand" to="/signin">
+                  Sign in
+                </Link>
+              </div>
+              <div className="fa join-now">
+                <Link className="navbar-brand" to="/account/create">
+                  Join now
+                </Link>
+              </div>
             </div>
           </div>
         </div>

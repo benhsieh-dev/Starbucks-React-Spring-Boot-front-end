@@ -16,7 +16,7 @@
 .right-navigation-menu {
     display: flex;
     justify-content: space-between;
-    width: 20vw;
+    width: 19vw;
     margin-right: 3.5vw;
 }
 
@@ -35,12 +35,29 @@
     width: 6vw; 
 }
 
+.right-submenu {
+    display: flex;
+}
+
 .sign-in {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    place-items: center;
     border: solid;
+    border-width: 1px;
+    height: 3.3vh;
+    width: 4vw;
+    border-radius: 2em;
+    margin-right: 1em;
 }
 
 .join-now {
-    border: solid;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    place-items: center;
     background-color: #000000;
     color: #ffffff; 
+    height: 3.3vh;
+    width: 4vw;
+    border-radius: 2em;
 }
