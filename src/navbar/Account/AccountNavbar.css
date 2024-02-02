@@ -15,6 +15,7 @@
 
 .right-navigation-menu {
     display: flex;
+    width: 14vw;
 }
 
 .dropdown {
@@ -58,5 +59,8 @@
     display: grid;
     grid-template-columns: repeat(2, 50%);
     place-items: center;
-    width: 8vw; 
+}
+
+.button {
+    background-color: #fff; 
 }
