@@ -15,7 +15,7 @@
 
 .right-navigation-menu {
     display: flex;
-    width: 14vw;
+    width: 18vw;
 }
 
 .dropdown {
@@ -41,7 +41,10 @@
 }
 
 .dropdown:hover .content {
+    margin-top: 5.5vh;
     display: block;
+    background-color: #f9f9f9;
+    text-align: start;
 }
 
 .navbar-account {
