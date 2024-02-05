@@ -15,7 +15,7 @@
 
 .right-navigation-menu {
     display: flex;
-    width: 18vw;
+    width: 14vw;
 }
 
 .dropdown {
@@ -66,4 +66,8 @@
 
 .button {
     background-color: #fff; 
+}
+
+a {
+    color: #000;
 }
