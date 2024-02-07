@@ -16,8 +16,8 @@
 .right-navigation-menu {
     display: flex;
     justify-content: space-between;
-    width: 19vw;
     margin-right: 3.5vw;
+    width: 19vw !important; 
 }
 
 .splash-navbar-container {
