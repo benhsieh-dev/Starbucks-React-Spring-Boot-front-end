@@ -35,6 +35,10 @@
     width: 6vw; 
 }
 
+.left-submenu:hover {
+    color: #01754A; 
+    cursor: pointer;
+}
 .right-submenu {
     display: flex;
 }
@@ -51,12 +55,16 @@
     margin-right: 1em;
 }
 
+.sign-in:hover {
+    background-color: #e5e5e5;
+}
+
 .join-now {
     display: grid;
     grid-template-columns: repeat(1, 100%);
     place-items: center;
     background-color: #000000;
-    color: #ffffff; 
+    color: #ffffff;
     height: 3.3vh;
     width: 4vw;
     border-radius: 2em;

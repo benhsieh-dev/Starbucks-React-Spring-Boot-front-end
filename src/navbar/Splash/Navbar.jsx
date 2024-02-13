@@ -18,33 +18,35 @@ export default function Navbar() {
                 height="60"
               ></img>
             </Link>
-            <Link className="navbar-brand" to="/menu">
+            <Link to="/menu">
               MENU
             </Link>
-            <Link className="navbar-brand" to="/rewards">
+            <Link to="/rewards">
               REWARDS
             </Link>
-            <Link className="navbar-brand" to="/giftcards">
+            <Link to="/giftcards">
               GIFT CARDS
             </Link>
             <Link to="/adddrink">Add Menu Item</Link>
           </div>
 
           <div className="right-navigation-menu">
-            <div className="fa">
-              <FontAwesomeIcon icon={faLocationDot} />
-              <Link className="navbar-brand" to="/storelocator">
-                Find a store
-              </Link>
+            <div className="left-submenu">
+              <div className="fa">
+                <FontAwesomeIcon icon={faLocationDot} />
+                <Link className="find-a-store" to="/storelocator">
+                  Find a store
+                </Link>
+              </div>
             </div>
             <div className="right-submenu">
               <div className="sign-in">
-                <Link className="navbar-brand" to="/signin">
+                <Link to="/signin">
                   Sign in
                 </Link>
               </div>
               <div className="fa join-now">
-                <Link className="navbar-brand" to="/account/create">
+                <Link to="/account/create">
                   Join now
                 </Link>
               </div>
