@@ -15,9 +15,9 @@
 
 .right-navigation-menu {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-right: 3.5vw;
-    width: 19vw !important; 
+    width: 21vw !important; 
 }
 
 .splash-navbar-container {
@@ -57,6 +57,11 @@
 
 .sign-in:hover {
     background-color: #e5e5e5;
+    cursor: pointer;
+}
+
+.sign-in a:hover {
+    color: #000; 
 }
 
 .join-now {
@@ -64,8 +69,16 @@
     grid-template-columns: repeat(1, 100%);
     place-items: center;
     background-color: #000000;
-    color: #ffffff;
     height: 3.3vh;
     width: 4vw;
     border-radius: 2em;
+}
+
+.join-now a {
+    color: #ffffff;
+}
+
+.join-now:hover {
+    background-color: #4C4C4C;
+    cursor: pointer;
 }
