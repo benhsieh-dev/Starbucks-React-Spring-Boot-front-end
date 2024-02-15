@@ -15,9 +15,9 @@
 
 .right-navigation-menu {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     margin-right: 3.5vw;
-    width: 21vw !important; 
+    /* width: 19vw !important;  */
 }
 
 .splash-navbar-container {
@@ -32,7 +32,6 @@
     display: grid;
     grid-template-columns: repeat(2, 50%);
     place-items: center;
-    width: 6vw; 
 }
 
 .left-submenu:hover {
@@ -82,3 +81,7 @@
     background-color: #4C4C4C;
     cursor: pointer;
 }
+
+/* .find-a-store {
+    white-space: nowrap;
+} */
