@@ -29,39 +29,47 @@ export default function AccountNavbar() {
               <FontAwesomeIcon className="fa" icon={faLocationDot} />
               <Link to="/storelocator">Find a store</Link>
             </div>
+
             <div className="dropdown">
-              <div className="navbar-account icon">
+              <div className="navbar-account">
                 <FontAwesomeIcon className="fa" icon={faCircleUser} />
                 <button class="button">Account</button>
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
-              <div className="content">
-                <ul>
-                  <li>
-                    <a href="www.google.com">Card Management</a>
-                  </li>
-                  <li>
-                    <a href="www.google.com">My Rewards</a>
-                  </li>
-                  <li>
-                    <a href="www.google.com">History</a>
-                  </li>
-                  <li>
-                   <a href="www.google.com">Personal Info</a>
-                  </li>
-                  <li>
-                    <a href="www.google.com">Payment Method</a>
-                  </li>
-                  <li>
-                   <a href="www.google.com">Privacy and data</a>
-                  </li>
-                  <li>
-                   <a href="www.google.com">Settings</a>
-                  </li>
-                  <hr />
-                  <li>
-                    <a href="www.google.com">Sign Out</a>
-                  </li>
-                </ul>
+
+              <div>
+                <div className="content">
+                  <ul>
+                    <li>
+                      <a href="www.google.com">Card Management</a>
+                    </li>
+                    <li>
+                      <a href="www.google.com">My Rewards</a>
+                    </li>
+                    <li>
+                      <a href="www.google.com">History</a>
+                    </li>
+                    <li>
+                      <a href="www.google.com">Personal Info</a>
+                    </li>
+                    <li>
+                      <a href="www.google.com">Payment Method</a>
+                    </li>
+                    <li>
+                      <a href="www.google.com">Privacy and data</a>
+                    </li>
+                    <li>
+                      <a href="www.google.com">Settings</a>
+                    </li>
+                    <hr />
+                    <li>
+                      <a href="www.google.com">Sign Out</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

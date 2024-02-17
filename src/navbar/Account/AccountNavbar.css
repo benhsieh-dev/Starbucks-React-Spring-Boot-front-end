@@ -1,3 +1,4 @@
+
 .acct-navbar-container {
     margin: 0 auto;
     display: flex;
@@ -15,13 +16,44 @@
 
 .right-navigation-menu {
     display: flex;
-    width: 14vw;
+    /* width: 20vw; */
 }
 
 .dropdown {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    position: relative; 
+}
+
+.dropdown span {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: purple;
+    border-radius: 1px;
+    transition: .5s;
+}
+
+.dropdown span:nth-child(1) {
+    /* left: 14px;  */
+    transform: rotate(-45deg);
+}
+
+.dropdown:hover span:nth-child(1) {
+    /* left: 14px;  */
+    transform: rotate(-135deg);
+}
+
+.dropdown span:nth-child(2) {
+    /* right: 14px; */
+    transform: rotate(45deg);
+}
+
+.dropdown:hover span:nth-child(2) {
+    /* left: 14px;  */
+    transform: rotate(135deg);
 }
 
 .dropdown a {
@@ -60,8 +92,10 @@
 
 .icon {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    /* grid-template-columns: 50px, 200px; */
     place-items: center;
+    width: 10vw;
+   
 }
 
 .button {
