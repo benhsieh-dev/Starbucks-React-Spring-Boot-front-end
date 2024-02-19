@@ -31,14 +31,14 @@ export default function Navbar() {
           </div>
 
           <div className="right-navigation-menu">
+
             <div className="left-submenu">
-              <div className="fa">
-                <FontAwesomeIcon icon={faLocationDot} />
+                <FontAwesomeIcon icon={faLocationDot} className="fa"/>
                 <Link className="find-a-store" to="/storelocator">
                   Find a store
                 </Link>
-              </div>
             </div>
+
             <div className="right-submenu">
               <div className="sign-in">
                 <Link to="/signin">

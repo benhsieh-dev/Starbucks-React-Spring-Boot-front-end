@@ -16,7 +16,7 @@
 .right-navigation-menu {
     display: flex;
     justify-content: space-between;
-    margin-right: 3.5vw;
+    /* margin-right: 3.5vw; */
     /* width: 19vw !important;  */
 }
 
@@ -29,15 +29,26 @@
 }
 
 .fa {
+    font-size: 20px;
+}
+
+.left-submenu {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    place-items: center;
+    grid-template-columns: 25px 100px; 
+    place-items: center; 
+    margin-right: 40px;
 }
 
 .left-submenu:hover {
     color: #01754A; 
     cursor: pointer;
 }
+
+.left-submenu:hover a {
+    color: #01754A; 
+    cursor: pointer;
+}
+
 .right-submenu {
     display: flex;
 }
