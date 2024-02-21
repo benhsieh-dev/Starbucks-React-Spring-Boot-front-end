@@ -45,7 +45,7 @@ export default function Navbar() {
                   Sign in
                 </Link>
               </div>
-              <div className="fa join-now">
+              <div className="join-now">
                 <Link to="/account/create">
                   Join now
                 </Link>
