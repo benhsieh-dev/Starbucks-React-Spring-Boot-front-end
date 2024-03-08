@@ -15,9 +15,30 @@ export default class LoginForm extends React.Component {
             onRegister: props.onRegister 
         }
     }
+
+    onChangeHandler = (evt) => {
+        let name = evt.target.name;
+        let value = evt.target.value;
+        this.setState({[name]: value});
+    }
+
+    onSubmitLogin = (evt) => {
+        this.state.onLogin(evt, this.state.login, this.state.password);
+    }
+
+    onSubmitRegister = (evt) => {
+        this.state.onRegister(
+            evt,
+            this.state.firstName,
+            this.state.lastName,
+            this.state.login,
+            this.state.password
+        )
+    }
+
     render() {
         return (
-            <div></div>
+            <div>Login</div>
         ); 
     }
 }
