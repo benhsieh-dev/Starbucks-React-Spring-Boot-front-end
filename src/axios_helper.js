@@ -7,6 +7,10 @@ export const getAuthToken = () => {
     return window.localStorage.getItem("auth_token");
 };
 
+export const setAuthToken = (token) => {
+    window.localStorage.setItem("auth_token", token);
+}
+
 export const request = (method, url, data) => {
     return axios({
         method: method,
