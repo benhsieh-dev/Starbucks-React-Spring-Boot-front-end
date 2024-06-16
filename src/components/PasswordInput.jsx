@@ -1,14 +1,13 @@
 import React from 'react'
-import { connect } from 'react-redux'
 
-export const PasswordInput = (props) => {
+export default function PasswordInput() {
   return (
-    <div>PasswordInput</div>
+    <div>
+        <form>
+            <label
+                htmlFor='password'></label>
+        </form>    
+    </div>
   )
 }
 
-const mapStateToProps = (state) => ({})
-
-const mapDispatchToProps = {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(PasswordInput)
