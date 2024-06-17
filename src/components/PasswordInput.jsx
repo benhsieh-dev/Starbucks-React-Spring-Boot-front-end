@@ -5,7 +5,11 @@ export default function PasswordInput() {
     <div>
         <form>
             <label
-                htmlFor='password'></label>
+                htmlFor='password'>Password</label>
+            <div>
+                <input>
+                </input>            
+            </div>
         </form>    
     </div>
   )
