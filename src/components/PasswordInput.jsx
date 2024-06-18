@@ -7,7 +7,11 @@ export default function PasswordInput() {
             <label
                 htmlFor='password'>Password</label>
             <div>
-                <input>
+                <input
+                    value={""}
+                    id="password"
+                    placeholder='password'
+                >
                 </input>            
             </div>
         </form>    
