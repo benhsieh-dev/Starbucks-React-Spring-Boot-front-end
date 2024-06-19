@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function PasswordInput() {
+    const [password, setPassword] = useState("");
+    
   return (
     <div>
         <form>
