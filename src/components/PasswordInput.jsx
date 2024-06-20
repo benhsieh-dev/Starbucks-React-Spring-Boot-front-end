@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export default function PasswordInput() {
     const [password, setPassword] = useState("");
-    
+
   return (
     <div>
         <form>
@@ -10,9 +10,10 @@ export default function PasswordInput() {
                 htmlFor='password'>Password</label>
             <div>
                 <input
-                    value={""}
+                    value={"password"}
                     id="password"
                     placeholder='password'
+                    onChange={e => setPassword(e.target.value)}
                 >
                 </input>            
             </div>
