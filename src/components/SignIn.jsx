@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LoginContext } from "../App";
 import axios from "axios";
+import PasswordInput from "./PasswordInput";
 
 export default function SignIn() {
   const [email, setEmail] = useState("");
@@ -66,6 +67,7 @@ export default function SignIn() {
               </div>
               <div className="form-group">
                 <label>password</label>
+                <PasswordInput/>
                 <input
                   type="password"
                   className="form-control"
