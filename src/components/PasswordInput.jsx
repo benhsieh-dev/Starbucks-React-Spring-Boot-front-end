@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 export default function PasswordInput() {
     const [setPassword] = useState("");
+    const [visible, setVisible] = useState(true); 
 
   return (
     <div>       
