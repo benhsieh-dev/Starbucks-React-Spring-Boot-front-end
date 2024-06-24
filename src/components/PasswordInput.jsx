@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export default function PasswordInput() {
     const [setPassword] = useState("");
-    const [visible, setVisible] = useState(true); 
+    const [visible, setVisible] = useState(false); 
 
   return (
     <div>       
@@ -11,6 +11,7 @@ export default function PasswordInput() {
         <div>
             <input
                 value={"password"}
+                type={visible ? "text" : "password"}
                 id="password"
                 placeholder='password'
                 onChange={e => setPassword(e.target.value)}
