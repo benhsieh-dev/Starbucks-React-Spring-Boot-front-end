@@ -18,6 +18,7 @@ import SignIn from "./components/SignIn";
 import JoinNow from "./pages/JoinNow/JoinNow";
 import Register from "./components/Register";
 import { createContext, useState } from "react";
+import "./index.css";
 
 export const LoginContext = createContext()
 
