@@ -7,7 +7,9 @@ export default function PasswordInput() {
 
   return (
     <div>
-      <label htmlFor="password">Password</label>
+      <label 
+        htmlFor="password"
+        className='flex self-center mx-8 block mb-2 text-sm font-medium'>Password</label>
       <div>
         <input
           value={"password"}
