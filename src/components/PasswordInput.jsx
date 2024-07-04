@@ -23,7 +23,7 @@ export default function PasswordInput() {
           className='bg-gray-200 text-gray-900 text-sm w-[300px] border-none focus:border-none
           '
         ></input>
-        <div className="p-2">
+        <div className="p-2" onClick={() => setVisible(!visible)}>
           {visible ? <EyeOutlined /> : <EyeInvisibleOutlined />}
         </div>
       </div>
