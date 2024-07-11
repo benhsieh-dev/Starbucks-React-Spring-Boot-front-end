@@ -3,7 +3,7 @@ import { EyeInvisibleOutlined, EyeOutlined } from '@ant-design/icons';
 import "./PasswordInput.css";
 
 export default function PasswordInput() {
-    const [setPassword] = useState("");
+    const [password, setPassword] = useState("");
     const [visible, setVisible] = useState(false); 
 
   return (
@@ -14,13 +14,12 @@ export default function PasswordInput() {
       >
         Password
       </label>
-      <div className='passwordInput'
-      >
+      <div className="passwordInput">
         <input
-          value={"Enter Password"}
           type={visible ? "text" : "password"}
+          value={password}
           id="password"
-          placeholder="password"
+          placeholder="Enter Password"
           onChange={(e) => setPassword(e.target.value)}
           className="bg-gray-50 text-gray-900 text-sm w-[300px] border-none focus:border-none focus:outline-none"
         ></input>

@@ -66,8 +66,8 @@ export default function SignIn() {
                 />
               </div>
               <div className="form-group">
+                <PasswordInput />
                 <label>password</label>
-                <PasswordInput/>
                 <input
                   type="password"
                   className="form-control"
