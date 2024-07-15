@@ -6,7 +6,7 @@ import PasswordInput from "./PasswordInput";
 
 export default function SignIn() {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [password] = useState("");
   const [loggedIn, setLoggedIn] = useContext(LoginContext); 
   
   const navigate = useNavigate();
@@ -65,8 +65,8 @@ export default function SignIn() {
                   }}
                 />
               </div>
-              <div className="form-group">
-                <PasswordInput />
+              <PasswordInput />
+              {/* <div className="form-group">
                 <label>password</label>
                 <input
                   type="password"
@@ -78,7 +78,7 @@ export default function SignIn() {
                     setPassword(event.target.value);
                   }}
                 />
-              </div>
+              </div> */}
 
               <button type="submit" className="btn btn-primary" onClick={login}>
                 Login
