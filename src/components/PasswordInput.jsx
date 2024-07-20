@@ -24,6 +24,7 @@ export default function PasswordInput() {
           placeholder="Enter Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          autoComplete='on'
         ></input>
         <div className="p-2" onClick={() => setVisible(!visible)}>
           {visible ? <EyeOutlined /> : <EyeInvisibleOutlined />}
