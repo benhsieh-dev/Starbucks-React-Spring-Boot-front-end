@@ -66,20 +66,6 @@ export default function SignIn() {
                 />
               </div>
               <PasswordInput />
-              {/* <div className="form-group">
-                <label>password</label>
-                <input
-                  type="password"
-                  className="form-control"
-                  id="password"
-                  placeholder="Enter Password"
-                  value={password}
-                  onChange={(event) => {
-                    setPassword(event.target.value);
-                  }}
-                />
-              </div> */}
-
               <button type="submit" className="btn btn-primary" onClick={login}>
                 Login
               </button>
